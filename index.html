@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media DApp</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Social Media DApp</h1>
+            <button id="connectWallet">Connect Wallet</button>
+            <div id="userInfo" class="hidden">
+                <p>Address: <span id="userAddress"></span></p>
+                <p>Credibility Score: <span id="credibilityScore">0</span></p>
+                <p>Successful Posts: <span id="successfulPosts">0</span></p>
+            </div>
+        </header>
+
+        <section class="create-post">
+            <h2>Create New Post</h2>
+            <div class="post-form">
+                <input type="number" id="postId" placeholder="Enter Post ID">
+                <button onclick="createPost()">Create Post</button>
+            </div>
+        </section>
+
+        <section class="posts">
+            <h2>Posts</h2>
+            <div id="postsList"></div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 
